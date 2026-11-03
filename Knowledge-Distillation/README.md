@@ -77,6 +77,3 @@ Two things I would want a reader to know rather than discover.
 
 **Single runs, not averages.** Experiment II retrains the baseline student, and the two baseline runs disagree under the same seed: 0.883 against 0.856. That 0.027 spread comes from dataloader ordering and cuDNN kernel choice, and it is about the same size as the differences between the three distillation methods. The logit-KD advantage holds under both teachers and is big enough to survive it; the exact ordering of feature against attention KD is not something I would claim. Averaging over seeds is the first thing I would add with more compute.
 
-## License
-
-MIT, see `LICENSE`.
